@@ -3,10 +3,10 @@
 - 0.3: HTML forms - complete!
 - 0.4: new note - complete!
    - [Text](0.4.txt)
-   - [Diagram](0.4.png)
+   - ![Diagram](0.4.png)
 - 0.5: Single page app - complete!
   - [Text](0.5.txt)
-   - [Diagram](0.5.png)
+  - ![Diagram](0.5.png)
 - 0.6: New note - complete!
    - [Text](0.6.txt)
-   - [Diagram](0.6.png)
+   - ![Diagram](0.6.png)
