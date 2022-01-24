@@ -1,0 +1,15 @@
+note over browser:
+creates a new note object, adds it to note list
+rerenders the note list on the page
+sends a new note to the server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+browser->server: {content:"boom!",date:"2022-01-24T06:40:44.752Z"}
+
+
+
+note over server:
+server accesses data in the POST-request JSON
+adds note to database
+end note
