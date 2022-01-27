@@ -12,10 +12,10 @@ const Header = ({ text }) => {
   )
 }
 
-const BestAnecdote = ({ bestAnecdote, voteCount }) => {
+const DisplayAnecdote = ({ anecdote, voteCount }) => {
   return (
     <>
-    <div>{bestAnecdote}</div>
+    <div>{anecdote}</div>
     <div>has {voteCount} votes</div>
     </>
   )
@@ -58,12 +58,11 @@ const App = () => {
   return (
     <div>
       <Header text='Anecdote of the day'/>
-      {anecdotes[selected]}
-      <div>has {copy[selected]} votes</div>
+      <DisplayAnecdote anecdote={anecdotes[selected]} voteCount={copy[selected]}/>
       <Button text='vote' onClick={voteForAnecdote}/>
       <Button text='next anecdote' onClick={nextAnecdote}/>
       <Header text='Anecdote with the most votes'/>
-      <BestAnecdote bestAnecdote={bestAnecdote} voteCount={voteCount}/>
+      <DisplayAnecdote anecdote={bestAnecdote} voteCount={voteCount}/>
     </div>
   )
 }
