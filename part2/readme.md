@@ -1,3 +1,0 @@
-- Courseinfo part 2
-- Countries
-- Phonebook
